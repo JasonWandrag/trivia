@@ -131,4 +131,8 @@ input:checked + label {
   button {
     width: 100%;
   }
+  #correct {
+    top: 0;
+    right: 0;
+  }
 }
