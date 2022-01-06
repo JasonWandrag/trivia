@@ -1,7 +1,12 @@
 let trivia;
 let currentTab = 0;
+let amtCorrect = 0;
+let total = 0;
 
-// document.body.style.overflow = "hidden";
+document.querySelector("#options").addEventListener("submit", () => {
+  event.preventDefault();
+  setOptions();
+});
 
 function getQuestions(url) {
   return new Promise((resolve, reject) => {
@@ -13,14 +18,6 @@ function getQuestions(url) {
       });
   });
 }
-
-document.querySelector("#options").addEventListener("submit", () => {
-  event.preventDefault();
-  setOptions();
-});
-
-let amtCorrect = 0;
-let total = 0;
 
 function setTally(total, correct) {
   document.querySelector("#correct").innerHTML = `${correct}/${total}`;
@@ -40,7 +37,6 @@ function setOptions() {
   }${difficulty ? "&difficulty=" + difficulty : ""}${
     type ? "&type=" + type : ""
   }`;
-  console.log(triviaURL);
 
   getQuestions(triviaURL).then((questions) => {
     let container = document.querySelector("#questions");
@@ -100,7 +96,6 @@ function multiAns(correct, incorrect, index) {
 }
 
 function checkAnswer(index) {
-  console.log(index);
   let question = document.querySelectorAll(`[name='q${index}']`);
 
   let selected;
@@ -112,7 +107,6 @@ function checkAnswer(index) {
   }
 
   selected = selected.value;
-  console.log(trivia[index].correct_answer, selected);
 
   if (trivia[index].correct_answer == selected) {
     alert(`You got question ${index + 1} correct`);
@@ -136,7 +130,6 @@ ${trivia[index].correct_answer}`);
     setTally(total, amtCorrect);
     return;
   }
-  console.log();
   showTab(currentTab);
   // trivia.then((questions) => {
   // });
