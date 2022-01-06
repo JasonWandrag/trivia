@@ -110,6 +110,7 @@ button {
 
 .answers input {
   width: 0;
+  height: 0;
 }
 
 .answers label {
@@ -139,5 +140,8 @@ input:checked + label {
   #correct {
     top: 0;
     right: 0;
+  }
+  .answers label {
+    margin: 0;
   }
 }
