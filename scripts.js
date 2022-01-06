@@ -119,7 +119,9 @@ function checkAnswer(index) {
     amtCorrect++;
     setTally(total, amtCorrect);
   } else {
-    alert(`You got question ${index + 1} wrong`);
+    alert(`You got question ${index + 1} wrong.
+    The correct answer is:
+    ${trivia[index].correct_answer}`);
   }
   hideTab(currentTab);
   currentTab++;
