@@ -129,6 +129,7 @@ ${trivia[index].correct_answer}`);
     alert(`Well done! You got ${amtCorrect} out of ${total} correct!`);
     document.querySelector("[type='submit']").disabled = false;
     document.querySelector("#settings").scrollIntoView();
+    document.querySelector("#questions").innerHTML = "";
     total = 0;
     amtCorrect = 0;
     setTally(total, amtCorrect);
