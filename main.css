@@ -5,13 +5,11 @@
   scroll-behavior: smooth;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
-
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Shizuru", cursive;
+  font-family: cursive;
 }
 
 body {
