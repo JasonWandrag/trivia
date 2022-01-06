@@ -1,7 +1,7 @@
 let trivia;
 let currentTab = 0;
 
-document.body.style.overflow = "hidden";
+// document.body.style.overflow = "hidden";
 
 function getQuestions(url) {
   return new Promise((resolve, reject) => {
