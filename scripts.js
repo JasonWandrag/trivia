@@ -132,6 +132,7 @@ ${trivia[index].correct_answer}`);
     document.querySelector("#questions").innerHTML = "";
     total = 0;
     amtCorrect = 0;
+    currentTab = 0;
     setTally(total, amtCorrect);
     return;
   }
