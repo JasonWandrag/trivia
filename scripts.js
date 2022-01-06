@@ -120,8 +120,8 @@ function checkAnswer(index) {
     setTally(total, amtCorrect);
   } else {
     alert(`You got question ${index + 1} wrong.
-    The correct answer is:
-    ${trivia[index].correct_answer}`);
+The correct answer is:
+${trivia[index].correct_answer}`);
   }
   hideTab(currentTab);
   currentTab++;
