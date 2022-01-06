@@ -119,6 +119,8 @@ button {
   width: 100%;
   margin: 10px;
   transition: all 0.3s linear;
+  justify-content: center;
+  align-items: center;
 }
 
 input:checked + label {
