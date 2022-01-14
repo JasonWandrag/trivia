@@ -167,5 +167,4 @@ function hideTab(n) {
   let questions = document.querySelectorAll(".tab");
   questions[n].style.opacity = 0;
   questions[n].style.zIndex = -10;
-  // questions[n].style.display = "none";
 }

@@ -7,7 +7,8 @@
 
 h1,
 h2 {
-  font-family: cursive;
+  font-family: "Island Moments", cursive;
+  font-size: 4rem;
 }
 
 body {
@@ -126,10 +127,6 @@ button {
 input:checked + label {
   color: #888;
 }
-
-/* .tab:nth-of-type(odd) input:checked + label {
-  color: #888;
-} */
 
 @media screen and (max-width: 530px) {
   .answers {
